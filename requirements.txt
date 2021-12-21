@@ -2,3 +2,4 @@ Flask==1.1.2
 keras==2.7.0
 nltk==3.5
 numpy==1.19.5
+gunicorn==20.1.0
