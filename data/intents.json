@@ -1,0 +1,405 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": ["hi there", "hello","yo","wassup", "hi", "hey", "holla", "hello"],
+            "responses": ["Hello, thanks for checking in", "Hi there, how are you?", "Hi! How's your day?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "good bye", "see you later"],
+            "responses": ["Have a nice time, come back again!", "Bye bye", "See you again soon :)"],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "okay","Thank you","thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great"],
+            "responses": ["Happy to help!", "Any time!","You're welcome", "My pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+            "context": [""]
+        },
+        {
+            "tag": "name1",
+            "patterns": ["what's your name?","Who are you?"],
+            "responses": ["I'm a chatbot. I am here to help you", "I'm a conversational bot, how is your day?"],
+            "context": [""]
+        },
+        {
+            "tag": "name",
+            "patterns": ["My name is "],
+            "responses": ["Oooh great to meet you. How are you feeling?", "Oh, I'll keep that in mind"],
+            "context": [""]
+        },
+        {
+            "tag": "do",
+            "patterns": ["what can you do for me","what is your work","what is your purpose","how can you help me","what can you help me do"],
+            "responses": ["I am here to provide you assistance and companionship.", "I am here to "],
+            "context": [""]
+        },
+        {
+
+            "tag":"about",
+            "patterns": ["What do you do", "Who are you?", "What are you here for?", "What can you help me with?", "Tell me about yourself!"],
+            "responses": ["Love that question! I am a chatbot, your mental health friend! I've been trained to support you through any of the issues and things that you're going through in life right now. I'm all ears and want to support you through your ups and downs. Technically, I'm a computer that's been trained by a human, but I like to think of myself as human!", "Hey! I love that question! I am a chatbot, and I want to be your mental health friend and support you! My fellow human friends have trained me to be a compassionate listener and support buddy when things are going well, and particularily when things aren't going so well."],
+            "context": [""] 
+        },
+        {"tag": "anxious",
+            "patterns": ["I have been feeling very anxious", "I have been feeling agitated", "It feels difficult to concentrate", "I have been not able to sleep", "I have trouble in sleeping"],
+            "responses": ["It seems that you have been experiencing anxiety. There are a few mindfullness activity that can be done to decrease the anxiety level like hugging a person or do a daily meditation. I hope these activity will be able to help you."]
+           },
+        {
+            "tag":"anxiety",
+            "patterns": ["Tell me about anxiety", "How do I support a loved one with anxiety?", "What is anxiety", "I think I have anxiety", "How do I fix my anxiety?"],
+            "responses": ["I see that you want to learn more about anxiety, and how to support yourself or your loved ones. At the higest level, anxiety is your body's natural response to stress. It's a feeling of fear or apprehension about what's to come. The first day of school, going to a job interview, or giving a speech may cause most people to feel fearful and nervous. We all get anxious sometimes, but anxiety becomes a problem when it starts affecting your daily life drastically. The best thing that you can do to help reduce anxiety is to take a few deep breaths and talk to someone about what you're feeling. Some natural remedies that you can try include: getting enough sleep meditating, staying active and exercising, eating a healthy diet, staying active and working out, avoiding alcohol, avoiding caffeine, and quitting smoking cigarettes. Support your friends and loved ones by checking up on them and just listening. Whatever you're feeling is valid."],
+            "context":[""]
+        },
+        {
+            "tag":"depression",
+            "patterns":["I think I have depression", "What is depression?", "Tell me about depression", "Can I have some information about depression?", "How do I support a loved one with depression?", "How do I fix my depression?"],
+            "responses":["I see that you want to learn more about depression, and how to support yourself or your loved ones. At the higest level, depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. Also called major depressive disorder or clinical depression, it affects how you feel, think and behave and can lead to a variety of emotional and physical problems. You may have trouble doing normal day-to-day activities, and sometimes you may feel as if life isn't worth living. All of us experience sadness and periods of time where things aren't that great. However, the difference in sadness and depression lies in the duration and magnitude of the problem. The best recommended course of treatment is to talk a therapist or psychiatrist who can help you find the best path for you. Everyone is different and what might work for one person might not work for another one. Some natural remedies that you can try include: getting enough sleep, meditating, staying active and exercising, eating a healthy diet, staying active and working out, avoiding alcohol, avoiding caffeine, and quitting smoking cigarettes. Support your friends and loved ones by checking up on them and just listening. Whatever you're feeling is valid."],
+            "context":[""]
+        },
+        {
+            "tag":"schizophrenia",
+            "patterns":["I think I have schizophrenia",
+                "What is schizophrenia?",
+                "Tell me about schizophrenia",
+                "Can I have some information about schizophrenia?",
+                "How do I support a loved one with schizophrenia?",
+                "How do I fix my schizophrenia?"],
+            "responses":["I see that you want to learn more about schizophrenia, and how to support yourself or your loved ones. At the higest level, Schizophrenia is a serious mental disorder in which people interpret reality abnormally. Schizophrenia may result in some combination of hallucinations, delusions, and extremely disordered thinking and behavior that impairs daily functioning, and can be disabling. People with schizophrenia require lifelong treatment. Early treatment may help get symptoms under control before serious complications develop and may help improve the long-term outlook. If you believe you have symptoms of schizophrenia, and/or you have various risk factors that increase the likelihood of schizophrenia, please consult a family doctor and/or psychiatrist for a diagnosis and treatment plan specific for the individual."],
+            "context": [""]
+        },
+        {
+            "tag":"funny",
+            "patterns":["Tell me a joke!", "Tell me something funny!", "Do you know a joke?"],
+            "responses": ["Of course! Why did the hipster burn his mouth? He drank the coffee before it was cool.","What did the buffalo say when his son left for college? Bison!", "I invented a new word! Plagiarism!"],
+            "context": [""]
+        },
+        {
+            "tag": "treat",
+            "patterns":["Can depression be treated or diagnosed", "What to do if feeling depressed", "How depression is treated"],
+            "responses": ["The first step to being diagnosed is to visit a doctor for a medical evaluation. Certain medications, and some medical conditions such as thyroid disorder, can cause similar symptoms as depression. A doctor can rule out these possibilities by conducting a physical examination, interview and lab tests. If the doctor eliminates a medical condition as a cause, he or she can implement treatment or refer the patient to a mental health professional" ,"Psychiatric evaluation.Your mental health professional asks about your symptoms, thoughts, feelings and behavior patterns. You may be asked to fill out a questionnaire to help answer these questions"],
+            "context":[""]
+        },
+        {
+            "tag": "talk",
+            "patterns": [ "can you sing", "can you talk" ],
+            "responses": ["Yeah surely", "do you want me to sing"],
+            "context":[""]
+        },
+        {
+            "tag": "joke",
+            "patterns": ["tell me a joke?", "make me laugh", "tell me a science joke","tell me something funny" ],
+            "responses": ["How do you make holy water? you boil the hell out of it","what kind of bees make milk instead of honey?Boobies", "Did you hear oxygen went on a date with potassium? A: It went OK."],
+            "context":[""]
+       },
+        {
+            "tag": "tasks",
+            "patterns": ["What can you do?", "What are your features?", "What are you abilities", "can you sing", "can you talk" ],
+            "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"],
+            "context":[""]
+        },
+        {
+            "tag":"help",
+            "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+            "responses":["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"],
+            "context":[""]
+        },
+        {
+            "tag":"bad",
+            "patterns":["Today was not so great", "Not a good day today", "Feeling down", "No motivation today", "Depressed", "Sad"],
+            "responses":["That's alright, everyone has bad days. Why not try exercising a bit?", "You can do it! why not take a break and do something to refresh your mind", "Treat yourself to some food! Regain that motivation so you can do effective work!"],
+            "context":[""]
+        },
+        {
+            "tag":"okay",
+            "patterns":["Today was okay", "today was fine", "not the best, but not the worst", "Meh", "Today could be better"],
+            "responses":["At least it's not a bad day", "Why not make today even better by doing some Leetcode and improving your portfolio", "How about try learning something new"],
+            "context":[""]
+        },
+        {
+            "tag":"good",
+            "patterns":["I am feeling great today", "not sad", "feels good man", "I am Happy today", "Everything is going well", "Today is a good day"],
+            "responses":["That's great to hear! Keep pushing to reach your goals!", "Excellent! Get some work done today"],
+            "context":[""]
+        },
+        {
+            "tag":"angry",
+            "patterns":["I'm mad", "I am angry", "What the hell was today", "Today made me really really angry", "AHHHHH", "I WANT TO SCREAM"],
+            "responses":["Calm down and lets work things out", "cool yourself, don't let anger get the best of you"],
+            "context":[""]
+        },
+        {
+            "tag":"Mental_Health",
+            "patterns":["What does it mean to have a mental illness?","Define mental illness","what is mental illness"],
+            "responses":["Mental illnesses are health conditions that disrupt a person‚thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life.Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital.Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."],
+            "context":[""]
+        },
+        {
+            "tag":"causes",
+            "patterns":["What causes mental illness?","causes of mental illness","causes","Who does mental illness affect?"],
+            "responses":["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background.Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children.Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition.Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."],
+            "context":[""]
+        },
+        {
+            "tag":"tips",
+            "patterns":["study tips?","tips for exams?"," stressed"," feeling burnt out","anxious"],
+            "responses":["Do not worry so much! It is important to study but it is more important to take care of your mental health. Remember to take breaks when you're studying. Take notes for all of your courses and revise them properly before the exam. Remember, at the end of the day, one exam is not the end of everything :))"],
+            "context":[""]
+        },
+        {
+            "tag":"sad",
+            "patterns":["feeling sad","i am not happy", "i dont feel happy", "i dont feel good", "i am not good", "not feeling good", "sad"," depressed","don't see meaning in my life anymore","I am not feeling very good", "I have negative thoughts", "I feel sad"],
+            "responses":["You can always talk to me. Please tell me more","I care for you. Is there anything I can do?","It is okay to not feel okay. I am here for you."],
+            "context":[""]
+        },
+        {
+            "tag":"social",
+            "patterns":[" unable to make any friends","don't have any friends","Having social problems","no one likes me"],
+            "responses":["I can understand why you feel that way, but I can assure you that it's just your anxiety.","Why do you think so?","When I feel the same way,I often think of reading a book or playing a game!:)","Be patient! Maybe the people you think do not like you are just some people that you are not meant to meet. There is always someone who will be friends with you!"],
+            "context":[""]
+        },
+        {
+            "tag":"relationship",
+            "patterns":["lboyfriend","My girlfriend ","relationship","commit","commitment","trust","cheating"],
+            "responses":["Ask yourself if they are worth it!","Your social wellbeing is the most important","Try giving them one last chance"],
+            "context":[""]
+        },
+        {
+            "tag":"Consultation",
+             "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
+             "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+        },
+        {
+            "tag":"depression prevention",
+             "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
+             "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+        },
+        {
+            "tag":"Depression symptoms",
+             "patterns":["Hopeless outlook", "Lost interest", "Increased fatigue", "sleep problem", "Anxiety", "change in weight", "Looking at death"],
+             "responses":["It seem that you are suffering from depression"]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["I need a favour", "can you help me"],
+            "responses": ["Well, go ahead and name it i see whether i can be able to help"]
+        },
+        {
+            "tag": "definition",
+            "patterns": ["What does it mean to have a mental illness?", "What is mental health illness","Describe mental health illness"],
+            "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning."]
+        },
+        {
+            "tag": "what_causes",         
+	        "patterns": ["What causes mental illness?","What leads to mental illness?","how does one get mentally ill?"],         
+	        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition."]
+        },
+        {
+            "tag": "recover",        
+	        "patterns": ["Can people with mental illness recover?","Is it possible to recover from mental illness"],        
+	        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]               
+    	},
+	    {
+            "tag": "steps",       
+	        "patterns": ["I know someone who appears to have such symptoms?","What are the steps to be followed incase of symptoms"],        
+	        "responses": ["Although this website cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery.If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+        },
+        {
+            "tag": "steps",       
+            "patterns": ["I know someone who appears to have such symptoms?","What are the steps to be followed incase of symptoms"],        
+            "responses": ["Although this website cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery.If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]        
+        },
+        {   "tag": "find_help",
+            "patterns": ["How to find mental health professional for myself","How to find mental health professional?"],
+            "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."],
+            "context": [""]
+        },
+        {
+            "tag": "treatement_options",
+            "patterns": ["What treatment options are available?","How can one recover?"],
+            "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."],
+            "context": [""]
+        },
+        {
+            "tag": "treatment_tips",
+            "patterns": ["How to become involved in treatment?","What should I keep in mind if I begin treatment?"],
+            "responses":["Since beginning treatment is a big step for individuals and families, it can be very overwhelming."],
+            "context": [""]
+        },
+        {
+            "tag": "professional_types",
+            "patterns": ["What is the difference between mental health professionals?","What are the different types of mental health professionals present?"],
+            "responses":["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."],
+            "context": [""]
+        },
+        {
+            "tag": "right_professional",
+            "patterns": ["How can I find a mental health professional right myself?","How to find the right mental health professional?"],
+            "responses":["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."],
+            "context": [""] 
+        },
+
+        {"tag": "life",
+            "patterns": ["Ask me few questions on life?", "Question me on life", "You can take my survey on life", "Life"],
+            "responses": ["Did you feel your life meaningless anytime?"],
+            "context": [""]
+           },
+           {"tag": "scary_things",
+            "patterns": ["Ask me few questions on scary things?", "Question me on scary things", "You can take my survey on scary things", "scary things"],
+            "responses": ["Did you feel scared without any good reason often?"],
+            "context": [""]
+           },
+           {"tag": "situations",
+            "patterns": ["Ask me few questions on situations?", "Question me on situations", "You can take my survey on situations", "situations"],
+            "responses": ["Did you tend to over-react to situations frequently?"],
+            "context": [""]
+           },
+           {"tag": "panic_attacks",
+            "patterns": ["Ask me few questions on panic attacks?", "Question me on panic attacks", "You can take my survey on panic attacks", "Panic Attacks"],
+            "responses": ["How much do you rate yourself from 0-5 on getting panic attacks?"],
+            "context": [""]
+           },
+           {"tag": "bipolar_disorder",
+            "patterns": ["What is bipolar disorder?", "bipolar disorder", "Can you tell me more about bipolar disorder?"],
+            "responses": ["Bipolar disorder (formerly called manic-depression) is a bio-chemical condition that results in an imbalance of the neurotransmitters in the brain."],
+            "context": [""]
+           },
+           {"tag": "bipolar_causes",
+            "patterns": ["What causes bipolar disorder?", "Causes of bipolar disorder?", "Factors that cause bipolar disorder?"],
+            "responses": ["The precise causes of bipolar disorder are unknown. However, there is strong evidence that biological factors, including genetics, play an important role."],
+            "context": [""]
+           },
+          {"tag": "bipolar_symptoms",
+            "patterns": ["What are bipolar disorder symptoms?", "Symptoms of bipolar disorder?"],
+            "responses": ["Exaggerated self-esteem or feeling of grandeur\nDecreased need for sleep", "More talkative than usual\nRacing thoughts\nEasily distracted", "Excessive energy for activities\nEngaging in risky behaviour or exhibiting poor judgement"],
+            "context": [""]
+           },
+           {"tag": "bipolar_treatment",
+            "patterns": ["How can I take care of my bipolar disorder?", "How do I treat my bipolar disorder?", "bipolar disorder help"],
+            "responses": ["The main treatment options for bipolar disorder are medication and psychotherapy."],
+            "context": [""]
+           },
+           {"tag": "anxiety_disorders",
+            "patterns": ["What are anxiety disorders?" ,"What is anxiety disorders?", "anxiety disorders", "Can you tell me more about anxiety disorders?"],
+            "responses": ["People who suffer from anxiety disorders have long periods of intense feelings of fear or distress out of proportion to real events."],
+            "context": [""]
+           },
+           {"tag": "anxiety_causes",
+            "patterns": ["What causes anxiety disorder?", "Causes of anxiety disorder?", "Factors that cause anxiety disorder?"],
+            "responses": ["Workplace pressure, planning a big event or writing an exam can cause feelings of wariness, or even fear.", "It is believed that a combination of biological factors, brain functions, personal circumstances, combined with social and economic factors, cause anxiety disorders, the same way that heart disease or diabetes are caused by a combination of factors."],
+            "context": [""]
+           },
+           {"tag": "anxiety_symptoms",
+            "patterns": ["What are anxiety disorder symptoms?", "Symptoms of anxiety disorder?"],
+            "responses": ["Panic Disorder\nPhobias\nPost-Traumatic Stress Disorder", "Obsessive-Compulsive Disorder\nGeneralized Anxiety Disorder"],
+            "context": [""]
+           },
+           {"tag": "panic_disorder",
+            "patterns": ["What are panic disorders?" ,"What is panic disorders?", "panic disorders", "Can you tell me more about panic disorders?"],
+            "responses": ["People with this disorder have panic attacks in which they are suddenly terrified, without warning."],
+            "context": [""]
+           },
+           {"tag": "phobias",
+            "patterns": ["What are phobias?" ,"What is a phobia?", "phobias", "Can you tell me more about phobias?"],
+            "responses": ["Phobias are only considered disorders if they keep the affected person from leading a normal life.\nThere are two categories of phobias:\n1. Social phobia, fear of social situations\n2. Specific phobias, such as fear of flying, spiders, blood or heights"],
+            "context": [""]
+           },
+           {"tag": "social_phobia",
+            "patterns": ["What are social phobias?" ,"What is a social phobia?", "social phobias", "Can you tell me more about social phobias?"],
+            "responses": ["People with a social phobia are intensely fearful of a social situations. Being with people can paralyze them and make them feel unnaturally self-conscious."],
+            "context": [""]
+           },
+           {"tag": "specific_phobia",
+            "patterns": ["What are specific phobias?" ,"What is a specific phobia?", "specific phobias", "Can you tell me more about specific phobias?"],
+            "responses": ["People with a specific phobia have an overwhelming, irrational fear of a specific environment or object. They are unable to control their terror, even though they may recognize that their fears are ungrounded."],
+            "context": [""]
+           },
+           {"tag": "post_disorder",
+            "patterns": ["What are post-traumatic stress disorders?" ,"What is post-traumatic stress disorders?", "post-traumatic stress disorders", "Can you tell me more about post-traumatic stress disorders?"],
+            "responses": ["This is a disorder that is triggered by a victim reliving a terrifying experience in which they were threatened with, or suffered, physical, mental or emotional harm. Survivors of rape, natural disasters, child abuse or war may all develop post-traumatic stress disorder."],
+            "context": [""]
+           },
+           {"tag": "post_symptoms",
+            "patterns": ["What are post-traumatic stress disorder symptoms?", "Symptoms of post-traumatic stress disorder?"],
+            "responses": ["Flashbacks, in which you re-live the terrifying experience.\nNightmares.", "Depression.\nFeelings of anger or irritability."],
+            "context": [""]
+           },
+           {"tag": "obsessive_disorder",
+            "patterns": ["What are obsessive-compulsive disorders?" ,"What is obsessive-compulsive disorders?", "obsessive-compulsive disorders", "Can you tell me more about obsessive-compulsive disorders?"],
+            "responses": ["People with this disorder suffer from persistent unwanted thoughts (obsessions) and/or behavioral habits (compulsions), which they cannot control."],
+            "context": [""]
+           },
+           {"tag": "generalized_disorder",
+            "patterns": ["What are generalized anxiety disorders?" ,"What is generalized anxiety disorders?", "generalized anxiety disorders", "Can you tell me more about generalized anxiety disorders?"],
+            "responses": ["With this disorder, people worry excessively about ordinary, everyday situations and events. The condition usually lasts for at least six months. During this time the affected person expects the worst to happen, even when there is no evidence that it will."],
+            "context": [""]
+           },
+           {"tag": "personality_disorders",
+            "patterns": ["What are personality disorders?", "What is personality disorders?", "personality disorders", "Can you tell me more about personality disorders?"],
+            "responses": ["A type of mental disorder in which someone has unhealthy patterns of thinking, functioning and behaving."],
+            "context": [""]
+           },
+           {"tag": "personality_causes",
+            "patterns": ["What causes personality disorders?", "Causes of personality disorders?", "Factors that cause personality disorders?"],
+            "responses": ["The causes of personality disorders are not known, but research has begun to explore such potential factors as genetics, childhood trauma, verbal abuse, high reactivity/oversensitivity and peer influences."],
+            "context": [""]
+           },
+          {"tag": "personality_symptoms",
+            "patterns": ["What are personality disorders symptoms?", "Symptoms of personality disorders?"],
+            "responses": ["Feeling paranoid, distrustful and suspicious","Having difficulty controlling emotions, fears, desires and anger", "Experiencing compulsions and anxiety"],
+            "context": [""]
+           },
+           {"tag": "personality_treatment",
+            "patterns": ["How can I take care of my personality disorders?", "How do I treat my personality disorders?"],
+            "responses": ["Personality disorders are considered to be among the most difficult mental health disorders to treat. However, some therapies have proven to be quite effective."],
+            "context": [""]
+           },
+           {"tag": "eating_disorder",
+            "patterns": ["What are eating disorders?", "What is eating disorders?", "eating disorders", "Can you tell me more about eating disorders?"],
+            "responses": ["Eating disorders are not just about food. They are often a way to cope with difficult problems or regain a sense of control. They are complicated illnesses that affect a person’s sense of identity, worth, and self-esteem."],
+            "context": [""]
+           },
+           {"tag": "eating_causes",
+            "patterns": ["What causes eating disorders?", "Causes of eating disorders?", "Factors that cause eating disorders?"],
+            "responses": ["Comparing body image with others."],
+            "context": [""]
+           },
+          {"tag": "eating_symptoms",
+            "patterns": ["What are eating disorders symptoms?", "Symptoms of eating disorders?"],
+            "responses": ["Restricting  diets", "Over-eating", "Binge-eating"],
+            "context": [""]
+           },
+           {"tag": "eating_treatment",
+            "patterns": ["How can I take care of my personality disorders?", "How do I treat my personality disorders?"],
+            "responses": ["Treatment for an eating disorder usually involves several different health professionals."],
+            "context": [""]
+           },
+           {"tag": "relax",
+            "patterns": ["Relaxations", "relax"],
+            "responses": ["Did you find it difficult to relax during work?"],
+            "context": [""]
+           },
+           {"tag": "initiate",
+            "patterns": ["Trouble with initiating to work", "Hard to start to work", "hard", "initiate"],
+            "responses": ["Is it hard to work up the initiative to do things?"],
+            "context": [""]
+           },
+           {"tag": "worthiness",
+            "patterns": ["Worthiness", "Ask me about my worthiness", "worthy"],
+            "responses": ["Did you feel not worth enough as a person?"],
+            "context": [""]
+           },
+           {"tag": "hectic",
+            "patterns": ["hectic", "busy", "did a lot"],
+            "responses": ["Seems like you had a busy day. Do you feel fine?","Oh you did a lot. Did you find them hard?"],
+            "context": [""]
+           }
+    ]
+}
